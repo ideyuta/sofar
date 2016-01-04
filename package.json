@@ -18,7 +18,7 @@
     "url": "https://github.com/ideyuta/sofar.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-links",
     "deploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "lint": "eslint --cache pages/*.jsx",
