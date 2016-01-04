@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "lint": "eslint --cache pages/*.jsx",
     "prepublish": "npm run build",
