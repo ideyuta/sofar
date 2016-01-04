@@ -1,0 +1,38 @@
+{
+  "name": "sofar",
+  "description": "感謝するぜ お前と出会えた これまでの 全てに!!!",
+  "version": "0.0.0",
+  "author": "ideyuta <ide.yuta@gmail.com>",
+  "dependencies": {
+    "react": "^0.14.5",
+    "react-document-title": "^2.0.1",
+    "react-router": "^0.13.5"
+  },
+  "keywords": [
+    "log"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ideyuta/sofar.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "eslint --cache pages/*.jsx",
+    "prepublish": "npm run build",
+    "start": "npm-run-all --parallel develop watch",
+    "test": "mocha test/index.js --compilers js:babel/register",
+    "watch": "chokidar pages/ -c 'npm run -s lint'"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^1.10.3",
+    "eslint-config-kanmu": "^9.1.0",
+    "eslint-plugin-react": "^3.13.1",
+    "eslint-plugin-sorting": "0.0.1",
+    "npm-run-all": "^1.4.0"
+  }
+}
