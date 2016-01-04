@@ -13,5 +13,7 @@ deployment:
   production:
     branch: master
     commands:
+      - git config --global user.email "ide.yuta@gmail.com"
+      - git config --global user.name "Yuta Ide"
       - npm run build
       - npm run deploy
