@@ -5,6 +5,10 @@ dependencies:
   pre:
     - npm i -g gatsby
 
+test:
+  override:
+    - echo 'test'
+
 deployment:
   production:
     branch: master
