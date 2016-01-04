@@ -1,0 +1,13 @@
+machine:
+  timezone: Asia/Tokyo
+
+dependencies:
+  pre:
+    - npm i -g gatsby
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run build
+      - npm run deploy
