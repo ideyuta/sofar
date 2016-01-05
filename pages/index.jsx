@@ -5,7 +5,7 @@ import {link} from 'gatsby-helpers';
 
 const propTypes = {
   config: PropTypes.object.isRequired,
-  pages: PropTypes.object.isRequired
+  pages: PropTypes.array.isRequired
 };
 
 
