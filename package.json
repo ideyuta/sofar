@@ -36,6 +36,7 @@
     "eslint-plugin-react": "^3.13.1",
     "eslint-plugin-sorting": "0.0.1",
     "gh-pages": "^0.8.0",
-    "npm-run-all": "^1.4.0"
+    "npm-run-all": "^1.4.0",
+    "stylus": "^0.53.0"
   }
 }
