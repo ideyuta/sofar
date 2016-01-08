@@ -42,6 +42,10 @@ export default class Html extends React.Component {
             href={this.props.favicon}
             rel="shortcut icon"
           />
+          <link
+            href={link('/css/bundle.css')}
+            rel="stylesheet"
+          />
         </head>
         <body>
           <div
