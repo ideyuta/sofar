@@ -55,6 +55,11 @@ export default class Html extends React.Component {
           <script src={link('/bundle.js')} />
           <script
             async={true}
+            deffer={true}
+            src="//platform.instagram.com/jp/embeds.js"
+          />
+          <script
+            async={true}
             src="//platform.twitter.com/widgets.js"
           />
         </body>
