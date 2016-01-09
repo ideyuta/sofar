@@ -53,6 +53,10 @@ export default class Html extends React.Component {
             id="react-mount"
           />
           <script src={link('/bundle.js')} />
+          <script
+            async={true}
+            src="//platform.twitter.com/widgets.js"
+          />
         </body>
       </html>
     );

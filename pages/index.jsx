@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react';
-import {Link} from 'react-router';
 import DocumentTitle from 'react-document-title';
 import {link} from 'gatsby-helpers';
 
@@ -24,7 +23,7 @@ export default class Index extends React.Component {
       if (page.path && page.path !== '/') {
         return (
           <li key={page.path}>
-            <Link to={link(page.path)}>{page.data.title}</Link>
+            <a href={link(page.path)}>{page.data.title}</a>
             <span>{page.data.date}</span>
           </li>
         );
