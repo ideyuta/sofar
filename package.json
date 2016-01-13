@@ -27,6 +27,7 @@
     "build:gatsby": "gatsby build --prefix-links",
     "deploy": "gh-pages -d public",
     "develop": "gatsby develop",
+    "entry": "babel-node scripts/entry.js --presets es2015",
     "lint": "eslint --cache pages/*.jsx",
     "start": "npm-run-all --parallel develop watch:*",
     "test": "mocha test/index.js --compilers js:babel/register",
