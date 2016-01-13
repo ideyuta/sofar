@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "author": "ideyuta <ide.yuta@gmail.com>",
   "dependencies": {
+    "fs-extra": "^0.26.4",
     "github-markdown-css": "^2.2.0",
+    "moment": "^2.11.1",
     "normalize.css": "^3.0.3",
     "react": "^0.14.5",
     "react-document-title": "^2.0.1",
