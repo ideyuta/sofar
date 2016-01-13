@@ -2,6 +2,11 @@
 
 ![NETERO](./netero.png)
 
+## Description
+
+Sofar is me so far.
+Use [Gatsby](https://github.com/gatsbyjs/gatsby).
+
 ## Development
 
 ```
