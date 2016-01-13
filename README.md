@@ -15,6 +15,13 @@ npm install
 npm start
 ```
 
-## Add Pages
+## Create Entry
 
-Create Markdown file `pages/**/*.md`
+If already been created: Open File  
+else: Create & Open File
+
+```
+npm run entry
+```
+
+Destination `pages/YYYY-MM-DD/index.md`
