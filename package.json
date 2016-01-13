@@ -26,7 +26,6 @@
     "deploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "lint": "eslint --cache pages/*.jsx",
-    "prepublish": "npm run build",
     "start": "npm-run-all --parallel develop watch:*",
     "test": "mocha test/index.js --compilers js:babel/register",
     "watch:css": "chokidar styles/ -c 'npm run build:css'",
