@@ -2,7 +2,6 @@ import React, {PropTypes} from 'react';
 import {link} from 'gatsby-helpers';
 
 const propTypes = {
-  body: PropTypes.object.isRequired,
   favicon: PropTypes.any
 };
 
@@ -48,10 +47,7 @@ export default class Html extends React.Component {
           />
         </head>
         <body>
-          <div
-            dangerouslySetInnerHTML={{__html: this.props.body}}
-            id="react-mount"
-          />
+          <div id="react-mount" />
           <script src={link('/bundle.js')} />
           <script
             async={true}
