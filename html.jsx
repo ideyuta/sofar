@@ -42,6 +42,11 @@ export default class Html extends React.Component {
             rel="shortcut icon"
           />
           <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <link
             href={link('/css/bundle.css')}
             rel="stylesheet"
           />
