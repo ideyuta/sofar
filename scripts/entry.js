@@ -19,7 +19,7 @@ moment.locale('jp', {weekdays: ['日', '月', '火', '水', '木', '金', '土']
 function getPostTmp() {
   return [
     '---\n',
-    'title: ""\n',
+    'title: "post"\n',
     `date: "${moment(today).format('YYYY-MM-DD hh:mm:ss (dddd)')}"\n`,
     'layout: post\n',
     'readNext: ""\n',
