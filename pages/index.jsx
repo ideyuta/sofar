@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import DocumentTitle from 'react-document-title';
+import nbem from 'nbem';
 import {link} from 'gatsby-helpers';
 
 const propTypes = {
@@ -19,12 +20,21 @@ export default class Index extends React.Component {
    * @return {ReactElement[]}
    */
   getPages() {
+    const p = nbem();
     return this.props.pages.map(page => {
       if (page.path && page.path !== '/') {
         return (
-          <li key={page.path}>
-            <a href={link(page.path)}>{page.data.title}</a>
-            <span>{page.data.date}</span>
+          <li
+            className={p('PageListItem')}
+            key={page.path}
+          >
+            <a
+              className={p('&link')}
+              href={link(page.path)}
+            >
+              {page.data.title}
+            </a>
+            <span className={p('&createdAt')}>{page.data.date}</span>
           </li>
         );
       }
@@ -41,7 +51,7 @@ export default class Index extends React.Component {
       <DocumentTitle title={this.props.config.blogTitle}>
         <div>
           <h1>Sofar</h1>
-          {this.getPages()}
+          <ul className="PageList">{this.getPages()}</ul>
         </div>
       </DocumentTitle>
     );
