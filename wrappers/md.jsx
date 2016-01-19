@@ -20,7 +20,7 @@ export default class Markdown extends React.Component {
     const post = this.props.page.data;
     return (
       <DocumentTitle title={`${post.title} | ${this.props.config.blogTitle}`}>
-        <div className="markdown-body">
+        <div className="markdown">
           <h1>{post.title}</h1>
           <span>Created {post.date}</span>
           <div dangerouslySetInnerHTML={{__html: post.body}}/>
