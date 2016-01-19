@@ -17,6 +17,19 @@ html, body
   font-size: 16px
   letter-spacing: 0.04em
 
+a
+  text-decoration: none
+  &:link
+    color: $blue700
+  &:visited
+    color: $blue900
+  &:hover
+    color: $blue500
+    text-decoration: underline
+  &:active
+    color: $blue800
+    text-decoration: underline
+
 #react-mount
   maxsize(768px, auto)
   box-sizing: border-box
