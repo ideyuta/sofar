@@ -1,5 +1,5 @@
 ---
-title: "post"
+title: "木村、お前タイムリープしてねえ？"
 date: "2016-01-20 06:33:30 (水)"
 layout: post
 readNext: ""
