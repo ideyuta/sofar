@@ -63,6 +63,11 @@ export default class Html extends React.Component {
             async={true}
             src="//platform.twitter.com/widgets.js"
           />
+          <script
+            async={true}
+            defer={true}
+            src="//assets.pinterest.com/js/pinit.js"
+          />
         </body>
       </html>
     );
