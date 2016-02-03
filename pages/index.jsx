@@ -49,7 +49,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <DocumentTitle title={this.props.config.blogTitle}>
-        <div>
+        <div className="Index">
           <h1>Sofar</h1>
           <ul className="PageList">{this.getPages()}</ul>
         </div>

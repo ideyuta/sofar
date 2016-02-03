@@ -33,9 +33,7 @@ a
 // Components
 //-------------------------------
 
-#react-mount
-  maxsize(768px, auto)
-  box-sizing: border-box
+.Index
   padding: 0 24px
 
 .PageList
@@ -48,6 +46,48 @@ a
     font-size: .75rem
     letter-spacing: .04em
     margin: 0 0 0 8px
+
+.PageFooter
+  size(100%, auto)
+  background: $gray50
+  margin-top: 40px
+  &__inner
+    display: flex
+    flex-direction: row
+
+.FooterNav
+  display: flex
+  flex: 1
+  p
+    margin: 0
+  &__anchor
+    box-sizing: border-box
+    display: block
+    padding: 24px
+    width: 100%
+    &:hover
+      background: $gray100
+      text-decoration: none
+    &__title
+      padding-bottom: 4px
+    &__createdAt
+      color: $gray400
+      font-size: .75rem
+      letter-spacing: .04em
+      margin: 0 0 0 8px
+
+.FooterNav--Prev
+  @extend .FooterNav
+
+.FooterNav--Next
+  @extend .FooterNav
+  border(0 0 0 1px, solid, $gray200)
+  text-align: right
+
+.Post
+  maxsize(768px, auto)
+  box-sizing: border-box
+  padding: 0 24px
 
 .PostHeader
   margin: 0 0 40px 0
