@@ -1,5 +1,5 @@
 ---
-title: "post"
+title: "ウィンダミア魂を見せちゃるかんね～！"
 date: "2016-02-03 06:35:57 (水)"
 layout: post
 readNext: ""
