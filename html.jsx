@@ -48,7 +48,7 @@ export default class Html extends React.Component {
             type="text/css"
           />
           <link
-            href={link('/css/bundle.css')}
+            href={link('/bundle.css')}
             rel="stylesheet"
           />
         </head>
