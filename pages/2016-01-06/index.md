@@ -2,7 +2,6 @@
 title: POSTALCO
 date: "2016-01-06 06:52:44 (水)"
 layout: post
-readNext: ""
 path: "/20160106/"
 ---
 

@@ -2,7 +2,6 @@
 title: "奴は、仏陀なのだ"
 date: "2016-01-23 07:31:46 (土)"
 layout: post
-readNext: ""
 path: "/20160123/"
 ---
 

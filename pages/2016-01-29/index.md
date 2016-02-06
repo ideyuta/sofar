@@ -2,7 +2,6 @@
 title: "paperjs"
 date: "2016-01-29 06:58:07 (金)"
 layout: post
-readNext: ""
 path: "/20160129/"
 ---
 

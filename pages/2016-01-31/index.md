@@ -2,7 +2,6 @@
 title: "手入れ"
 date: "2016-01-31 09:03:46 (日)"
 layout: post
-readNext: ""
 path: "/20160131/"
 ---
 

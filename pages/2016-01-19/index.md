@@ -2,7 +2,6 @@
 title: "NYPL Digital Collections"
 date: "2016-01-19 06:32:46 (火)"
 layout: post
-readNext: ""
 path: "/20160119/"
 ---
 

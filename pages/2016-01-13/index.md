@@ -2,7 +2,6 @@
 title: "Sofarのポスト作成を自動化"
 date: "2016-01-13 07:20:05 (水)"
 layout: post
-readNext: ""
 path: "/20160113/"
 ---
 

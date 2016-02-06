@@ -2,7 +2,6 @@
 title: "kaonashi"
 date: "2016-01-14 06:46:27 (木)"
 layout: post
-readNext: ""
 path: "/20160114/"
 ---
 

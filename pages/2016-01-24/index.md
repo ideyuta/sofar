@@ -2,7 +2,6 @@
 title: "料理"
 date: "2016-01-24 12:26:34 (日)"
 layout: post
-readNext: ""
 path: "/20160124/"
 ---
 

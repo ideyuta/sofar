@@ -2,7 +2,6 @@
 title: "散歩とからあげ"
 date: "2016-01-11 07:18:46 (月)"
 layout: post
-readNext: ""
 path: "/20160111/"
 ---
 

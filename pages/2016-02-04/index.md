@@ -2,7 +2,6 @@
 title: "たこ焼きの単位"
 date: "2016-02-04 06:53:07 (木)"
 layout: post
-readNext: ""
 path: "/20160204/"
 ---
 

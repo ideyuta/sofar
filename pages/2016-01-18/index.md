@@ -2,7 +2,6 @@
 title: "初雪"
 date: "2016-01-18 08:32:19 (月)"
 layout: post
-readNext: ""
 path: "/20160118/"
 ---
 

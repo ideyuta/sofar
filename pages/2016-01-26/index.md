@@ -2,7 +2,6 @@
 title: "うんちのゆくえ"
 date: "2016-01-26 07:40:59 (火)"
 layout: post
-readNext: ""
 path: "/20160126/"
 ---
 

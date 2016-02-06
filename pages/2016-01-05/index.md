@@ -2,7 +2,6 @@
 title: 御神酒と砂コーヒー
 date: "2016-01-05 07:24:34 (火)"
 layout: post
-readNext: ""
 path: "/20160105/"
 ---
 

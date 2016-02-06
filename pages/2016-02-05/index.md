@@ -2,7 +2,6 @@
 title: "桜島、噴火"
 date: "2016-02-05 06:34:49 (金)"
 layout: post
-readNext: ""
 path: "/20160205/"
 ---
 

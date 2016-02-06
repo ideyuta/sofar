@@ -2,7 +2,6 @@
 title: "野毛山動物園"
 date: "2016-01-09 06:43:37 (土)"
 layout: post
-readNext: ""
 path: "/20160109/"
 ---
 

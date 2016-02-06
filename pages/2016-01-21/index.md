@@ -2,7 +2,6 @@
 title: "True North, Akita."
 date: "2016-01-21 06:30:24 (木)"
 layout: post
-readNext: ""
 path: "/20160121/"
 ---
 

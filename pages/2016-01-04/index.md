@@ -2,7 +2,6 @@
 title: Gatsby
 date: "2016-01-04 08:05:07 (月)"
 layout: post
-readNext: ""
 path: "/20160104/"
 ---
 

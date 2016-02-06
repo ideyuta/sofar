@@ -2,7 +2,6 @@
 title: "私の知っているSMAPのはなし。"
 date: "2016-01-22 06:34:23 (金)"
 layout: post
-readNext: ""
 path: "/20160122/"
 ---
 
