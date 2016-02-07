@@ -50,9 +50,7 @@ export default class Index extends React.Component {
     return (
       <DocumentTitle title={this.props.config.blogTitle}>
         <div className="Index">
-          <h1>Sofar</h1>
           <ul className="PageList">{this.getPages()}</ul>
-          <a href={link('/activity/')}>Activity</a>
         </div>
       </DocumentTitle>
     );
