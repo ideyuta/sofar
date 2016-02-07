@@ -34,7 +34,30 @@ a
 //-------------------------------
 
 .Index
+  padding: 48px 24px 24px 24px
+
+.Header
+  box-shadow(0 0 8px rgba($gray900, .08))
+  size(100%, 25px)
+  align-items: center
+  background: #fff
+  box-sizing: border-box
+  display: flex
+  flex-direction: row
   padding: 0 24px
+  position: fixed
+  top: 0
+  &__title
+    font-size: 1rem
+    font-weight: 600
+    margin: 0
+    width: 40px
+  &__nav
+    display: flex
+    padding-left: 16px
+    &__item
+      font-size: .88rem
+      margin: 0 8px
 
 .PageList
   padding-left: 24px
@@ -87,7 +110,7 @@ a
 .Post
   maxsize(768px, auto)
   box-sizing: border-box
-  padding: 0 24px
+  padding: 48px 24px 24px 24px
 
 .PostHeader
   margin: 0 0 40px 0
