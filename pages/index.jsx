@@ -22,7 +22,7 @@ export default class Index extends React.Component {
   getPages() {
     const p = nbem();
     return this.props.pages.map(page => {
-      if (page.path && page.path !== '/') {
+      if (page.requirePath.match(/posts*/)) {
         return (
           <li
             className={p('PageListItem')}
