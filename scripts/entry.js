@@ -4,7 +4,7 @@ import fs from 'fs-extra';
 import moment from 'moment';
 
 const today = new Date();
-const path = `pages/${moment(today).format('YYYY-MM-DD')}/index.md`;
+const path = `pages/posts/${moment(today).format('YYYY-MM-DD')}.md`;
 
 /**
  * Set Weekdays Locale
