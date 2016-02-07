@@ -52,6 +52,7 @@ export default class Index extends React.Component {
         <div className="Index">
           <h1>Sofar</h1>
           <ul className="PageList">{this.getPages()}</ul>
+          <a href={link('/activity/')}>Activity</a>
         </div>
       </DocumentTitle>
     );
