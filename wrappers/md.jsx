@@ -42,7 +42,7 @@ export default class Markdown extends React.Component {
    */
   renderNavItem(id, n) {
     const page = this.props.pages[id];
-    if (!page.data) {
+    if (!page) {
       return null;
     }
     return (
