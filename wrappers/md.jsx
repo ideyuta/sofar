@@ -79,16 +79,18 @@ export default class Markdown extends React.Component {
               dangerouslySetInnerHTML={{__html: post.body}}
             />
           </div>
-          <div className={f('PageFooter')}>
-            <div className={f('&inner')}>
-              <div className={n('FooterNav:Prev')}>
-                {this.renderNavItem(this.state.pageId - 1, n)}
-              </div>
-              <div className={n('FooterNav:Next')}>
-                {this.renderNavItem(this.state.pageId + 1, n)}
+          {post.layout === 'post' && (
+            <div className={f('PageFooter')}>
+              <div className={f('&inner')}>
+                <div className={n('FooterNav:Prev')}>
+                  {this.renderNavItem(this.state.pageId - 1, n)}
+                </div>
+                <div className={n('FooterNav:Next')}>
+                  {this.renderNavItem(this.state.pageId + 1, n)}
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </DocumentTitle>
     );
