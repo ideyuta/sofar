@@ -20,7 +20,7 @@ function getPostTmp() {
   return [
     '---\n',
     'title: "post"\n',
-    `date: "${moment(today).format('YYYY-MM-DD hh:mm:ss (dddd)')}"\n`,
+    `date: "${moment(today).format('YYYY-MM-DD HH:mm:ss (dddd)')}"\n`,
     'layout: post\n',
     `path: "/${moment(today).format('YYYYMMDD')}/"\n`,
     '---'
