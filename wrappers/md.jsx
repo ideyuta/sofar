@@ -1,12 +1,11 @@
 import React, {PropTypes} from 'react';
+import {config} from 'config';
+import {link} from 'gatsby-helpers';
 import DocumentTitle from 'react-document-title';
 import nbem from 'nbem';
-import {link} from 'gatsby-helpers';
 
 const propTypes = {
-  config: PropTypes.object.isRequired,
-  page: PropTypes.object.isRequired,
-  pages: PropTypes.array.isRequired
+  route: React.PropTypes.object
 };
 
 
@@ -26,8 +25,8 @@ export default class Markdown extends React.Component {
    * @return {number}
    */
   getPageId() {
-    return this.props.pages.map((page, key) => {
-      if (page.path === this.props.page.data.path) {
+    return this.props.route.pages.map((page, key) => {
+      if (page.path === this.props.route.page.data.path) {
         return key;
       }
     }).filter(p => p)[0];
@@ -41,7 +40,7 @@ export default class Markdown extends React.Component {
    * @return {ReactElement|null}
    */
   renderNavItem(id, n) {
-    const page = this.props.pages[id];
+    const page = this.props.route.pages[id];
     if (!page || !page.requirePath.match(/posts*/)) {
       return null;
     }
@@ -62,12 +61,12 @@ export default class Markdown extends React.Component {
    * @return {ReactElement}
    */
   render() {
-    const post = this.props.page.data;
+    const post = this.props.route.page.data;
     const f = nbem();
     const h = nbem();
     const n = nbem();
     return (
-      <DocumentTitle title={`${post.title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${post.title} | ${config.siteTitle}`}>
         <div>
           <div className="Post">
             <div className={h('PostHeader')}>

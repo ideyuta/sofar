@@ -7,10 +7,11 @@
     "fs-extra": "^0.26.5",
     "moment": "^2.11.2",
     "nbem": "^0.2.0",
+    "lodash": "^4.6.1",
     "normalize.css": "^3.0.3",
     "react": "^0.14.7",
     "react-document-title": "^2.0.1",
-    "react-router": "0.13.5",
+    "react-router": "^2.0.1",
     "zenigame": "0.0.2"
   },
   "keywords": [
@@ -36,17 +37,21 @@
     "watch:lint": "chokidar pages/ -c 'npm run -s lint'"
   },
   "devDependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-core": "^6.5.1",
-    "babel-eslint": "^4.1.8",
-    "babel-preset-es2015": "^6.5.0",
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.0",
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-preset-es2015": "^6.6.0",
     "chokidar-cli": "^1.2.0",
     "eslint": "^1.10.3",
     "eslint-config-kanmu": "^9.1.0",
-    "eslint-plugin-react": "^3.16.1",
+    "eslint-plugin-react": "^4.2.1",
     "eslint-plugin-sorting": "0.0.1",
     "gh-pages": "^0.9.0",
     "npm-run-all": "^1.5.1",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.2.2",
     "stylus": "^0.53.0"
   }
 }

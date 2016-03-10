@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react';
+import {config} from 'config';
 import DocumentTitle from 'react-document-title';
 import nbem from 'nbem';
 import {link} from 'gatsby-helpers';
 
 const propTypes = {
-  config: PropTypes.object.isRequired,
-  pages: PropTypes.array.isRequired
+  route: React.PropTypes.object
 };
 
 
@@ -21,7 +21,7 @@ export default class Index extends React.Component {
    */
   getPages() {
     const p = nbem();
-    return this.props.pages.map(page => {
+    return this.props.route.pages.map(page => {
       if (page.requirePath.match(/posts*/)) {
         return (
           <li
@@ -48,7 +48,7 @@ export default class Index extends React.Component {
    */
   render() {
     return (
-      <DocumentTitle title={this.props.config.blogTitle}>
+      <DocumentTitle title={config.siteTitle}>
         <div className="Index">
           <ul className="PageList">{this.getPages()}</ul>
         </div>

@@ -1,10 +1,10 @@
 import React, {PropTypes} from 'react';
-import {RouteHandler} from 'react-router';
+import {config} from 'config';
 import Header from '../components/Header';
 import 'public/bundle.css';
 
 const propTypes = {
-  config: PropTypes.object.isRequired
+  children: PropTypes.any
 };
 
 /**
@@ -19,8 +19,8 @@ export default class Tmpl extends React.Component {
   render() {
     return (
       <div>
-        <Header blogTitle={this.props.config.blogTitle}/>
-        <RouteHandler {...this.props} />
+        <Header siteTitle={config.siteTitle}/>
+        {this.props.children}
       </div>
     );
   }

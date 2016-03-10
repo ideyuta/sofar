@@ -3,7 +3,7 @@ import {link} from 'gatsby-helpers';
 import nbem from 'nbem';
 
 const propTypes = {
-  blogTitle: PropTypes.string
+  siteTitle: PropTypes.string
 };
 
 
@@ -20,7 +20,7 @@ export default class Header extends React.Component {
     const h = nbem();
     return (
       <div className={h('Header')}>
-        <h1 className={h('&title')}>{this.props.blogTitle}</h1>
+        <h1 className={h('&title')}>{this.props.siteTitle}</h1>
         <div className={h('&nav')}>
           <a
             className={h('&&item')}
