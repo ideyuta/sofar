@@ -8,7 +8,7 @@ machine:
 
 dependencies:
   pre:
-    - npm i -g gatsby@v0.7.7
+    - npm i -g gatsby@v0.8.8
 
 test:
   override:
