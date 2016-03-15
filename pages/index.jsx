@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import {config} from 'config';
 import DocumentTitle from 'react-document-title';
 import nbem from 'nbem';
