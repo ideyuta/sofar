@@ -1,2 +1,4 @@
-extends: kanmu/react
-parser: babel-eslint
+extends:
+  - kanmu
+  - kanmu/browser
+  - kanmu/react

@@ -38,6 +38,7 @@ export default class Index extends React.Component {
           </li>
         );
       }
+      return null;
     }).reverse();
   }
 

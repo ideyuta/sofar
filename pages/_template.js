@@ -9,21 +9,17 @@ const propTypes = {
 
 /**
  * Tmpl Component
+ *
+ * @param {Object} props - props
+ * @return {ReactElement}
  */
-export default class Tmpl extends React.Component {
-  /**
-   * render
-   *
-   * @return {ReactElement}
-   */
-  render() {
-    return (
-      <div>
-        <Header siteTitle={config.siteTitle}/>
-        {this.props.children}
-      </div>
-    );
-  }
+export default function Tmpl(props) {
+  return (
+    <div>
+      <Header siteTitle={config.siteTitle} />
+      {props.children}
+    </div>
+  );
 }
 
 Tmpl.propTypes = propTypes;

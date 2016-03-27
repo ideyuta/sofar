@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 exports.loadContext = callback => {
   let context = require.context('./pages', true);
   if (module.hot) {
