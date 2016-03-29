@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {config} from 'config';
 import Header from '../components/Header';
-import 'public/bundle.css';
+import '../css/styles.css';
 
 const propTypes = {
   children: PropTypes.any

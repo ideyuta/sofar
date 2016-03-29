@@ -45,7 +45,12 @@ export default function Html(props) {
           type="text/css"
         />
         <link
-          href={link('/bundle.css')}
+          href="https://fonts.googleapis.com/css?family=Inconsolata"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link
+          href={link('/styles.css')}
           rel="stylesheet"
         />
       </head>
