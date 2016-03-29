@@ -12,11 +12,7 @@ machine:
 
 dependencies:
   pre:
-    - npm i -g gatsby@v0.8.8
-
-test:
-  override:
-    - echo 'test'
+    - npm i -g gatsby@v0.8.11
 
 deployment:
   production:
