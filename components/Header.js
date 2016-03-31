@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import {link} from 'gatsby-helpers';
+import {prefixLink} from 'gatsby-helpers';
 import nbem from 'nbem';
 
 const propTypes = {
@@ -20,7 +20,7 @@ export default function Header(props) {
       <h1 className={h('&title')}>
         <a
           className={h('&&anchor')}
-          href={link('/')}
+          href={prefixLink('/')}
         >{props.siteTitle}</a>
       </h1>
     </div>

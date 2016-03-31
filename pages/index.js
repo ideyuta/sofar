@@ -2,7 +2,7 @@ import React from 'react';
 import {config} from 'config';
 import DocumentTitle from 'react-document-title';
 import nbem from 'nbem';
-import {link} from 'gatsby-helpers';
+import {prefixLink} from 'gatsby-helpers';
 
 const propTypes = {
   route: React.PropTypes.object
@@ -30,7 +30,7 @@ export default class Index extends React.Component {
           >
             <a
               className={p('&link')}
-              href={link(page.path)}
+              href={prefixLink(page.path)}
             >
               {page.data.title}
             </a>

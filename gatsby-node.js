@@ -6,7 +6,7 @@ var fontAwesome = require('postcss-font-awesome');
 var atImport = require('postcss-import');
 var atMixins = require('postcss-mixins');
 
-module.exports = (rawConfig, env) => {
+exports.modifyWebpackConfig = (rawConfig, env) => {
   const config = rawConfig;
 
   // eslintの設定を追加

@@ -1,6 +1,6 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import {config} from 'config';
-import {link} from 'gatsby-helpers';
+import {prefixLink} from 'gatsby-helpers';
 import DocumentTitle from 'react-document-title';
 import nbem from 'nbem';
 
@@ -14,6 +14,11 @@ const propTypes = {
  */
 export default class Markdown extends React.Component {
 
+  /**
+   * constructor
+   *
+   * @param {Object} props - props
+   */
   constructor(props) {
     super(props);
     this.state = {pageId: this.getPageId()};
@@ -29,6 +34,7 @@ export default class Markdown extends React.Component {
       if (page.path === this.props.route.page.data.path) {
         return key;
       }
+      return null;
     }).filter(p => p)[0];
   }
 
@@ -36,7 +42,7 @@ export default class Markdown extends React.Component {
    * Render Footer Navigation Item
    *
    * @param {number} id - page id
-   * @param {function} n - nbem closure function
+   * @param {Function} n - nbem closure function
    * @return {ReactElement|null}
    */
   renderNavItem(id, n) {
@@ -47,7 +53,7 @@ export default class Markdown extends React.Component {
     return (
       <a
         className={n('&anchor')}
-        href={link(page.data.path)}
+        href={prefixLink(page.data.path)}
       >
         <p className={n('&&title')}>{page.data.title}</p>
         <p className={n('&&createdAt')}>{page.data.date}</p>
