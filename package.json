@@ -11,7 +11,7 @@
     "nbem": "^0.3.2",
     "normalize.css": "^4.0.0",
     "react": "^0.14.7",
-    "react-document-title": "^2.0.1",
+    "react-helmet": "^3.0.1",
     "react-router": "^2.0.1"
   },
   "devDependencies": {

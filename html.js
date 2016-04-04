@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import {prefixLink} from 'gatsby-helpers';
+import Helmet from 'react-helmet';
 
 const propTypes = {
   body: PropTypes.any,
@@ -14,6 +15,7 @@ const propTypes = {
  * @return {ReactElement}
  */
 export default function Html(props) {
+  const head = Helmet.rewind();
   return (
     <html>
       <head>
@@ -23,10 +25,6 @@ export default function Html(props) {
           name="author"
         />
         <meta
-          content="感謝するぜ お前と出会えた これまでの 全てに!!!"
-          name="description"
-        />
-        <meta
           content="IE=edge"
           httpEquiv="X-UA-Compatible"
         />
@@ -34,7 +32,8 @@ export default function Html(props) {
           content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0"
           name="viewport"
         />
-        <title>Sofar</title>
+        {head.meta.toComponent()}
+        {head.title.toComponent()}
         <link
           href={props.favicon}
           rel="shortcut icon"

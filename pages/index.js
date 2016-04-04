@@ -1,7 +1,7 @@
 import React from 'react';
-import {config} from 'config';
-import DocumentTitle from 'react-document-title';
+import Helmet from 'react-helmet';
 import nbem from 'nbem';
+import {config} from 'config';
 import {prefixLink} from 'gatsby-helpers';
 
 const propTypes = {
@@ -49,11 +49,18 @@ export default class Index extends React.Component {
    */
   render() {
     return (
-      <DocumentTitle title={config.siteTitle}>
-        <div className="Index">
-          <ul className="PageList">{this.getPages()}</ul>
-        </div>
-      </DocumentTitle>
+      <div className="Index">
+        <Helmet
+          meta={[
+            {
+              content: '感謝するぜ お前と出会えた これまでの 全てに!!!',
+              name: 'description'
+            }
+          ]}
+          title={config.siteTitle}
+        />
+        <ul className="PageList">{this.getPages()}</ul>
+      </div>
     );
   }
 }

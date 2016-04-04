@@ -1,8 +1,8 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import nbem from 'nbem';
 import {config} from 'config';
 import {prefixLink} from 'gatsby-helpers';
-import DocumentTitle from 'react-document-title';
-import nbem from 'nbem';
 
 const propTypes = {
   route: React.PropTypes.object
@@ -72,32 +72,35 @@ export default class Markdown extends React.Component {
     const h = nbem();
     const n = nbem();
     return (
-      <DocumentTitle title={`${post.title} | ${config.siteTitle}`}>
-        <div>
-          <div className="Post">
-            <div className={h('PostHeader')}>
-              <h1 className={h('&title')}>{post.title}</h1>
-              <span className={h('&createdAt')}>Created {post.date}</span>
-            </div>
-            <div
-              className="markdown"
-              dangerouslySetInnerHTML={{__html: post.body}}
-            />
+      <div>
+        <Helmet
+          meta={[{content: post.description, name: 'description'}]}
+          title={post.title}
+          titleTemplate={`%s | ${config.siteTitle}`}
+        />
+        <div className="Post">
+          <div className={h('PostHeader')}>
+            <h1 className={h('&title')}>{post.title}</h1>
+            <span className={h('&createdAt')}>Created {post.date}</span>
           </div>
-          {post.layout === 'post' && (
-            <div className={f('PageFooter')}>
-              <div className={f('&inner')}>
-                <div className={n('FooterNav:Prev')}>
-                  {this.renderNavItem(this.state.pageId - 1, n)}
-                </div>
-                <div className={n('FooterNav:Next')}>
-                  {this.renderNavItem(this.state.pageId + 1, n)}
-                </div>
+          <div
+            className="markdown"
+            dangerouslySetInnerHTML={{__html: post.body}}
+          />
+        </div>
+        {post.layout === 'post' && (
+          <div className={f('PageFooter')}>
+            <div className={f('&inner')}>
+              <div className={n('FooterNav:Prev')}>
+                {this.renderNavItem(this.state.pageId - 1, n)}
+              </div>
+              <div className={n('FooterNav:Next')}>
+                {this.renderNavItem(this.state.pageId + 1, n)}
               </div>
             </div>
-          )}
-        </div>
-      </DocumentTitle>
+          </div>
+        )}
+      </div>
     );
   }
 }
