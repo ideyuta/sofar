@@ -10,10 +10,6 @@ machine:
     - npm i -g npm@3
   timezone: Asia/Tokyo
 
-dependencies:
-  pre:
-    - npm i -g gatsby@v0.8.11
-
 deployment:
   production:
     branch: master
