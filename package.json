@@ -5,8 +5,8 @@
   "author": "ideyuta <ide.yuta@gmail.com>",
   "dependencies": {
     "fs-extra": "^0.26.7",
-    "highlight.js": "^9.2.0",
-    "lodash": "^4.6.1",
+    "highlight.js": "^9.3.0",
+    "lodash": "^4.8.2",
     "moment": "^2.12.0",
     "nbem": "^0.3.2",
     "normalize.css": "^4.0.0",
@@ -31,10 +31,10 @@
     "gh-pages": "^0.11.0",
     "postcss": "^5.0.19",
     "postcss-conditionals": "^2.0.2",
-    "postcss-cssnext": "^2.5.1",
+    "postcss-cssnext": "^2.5.2",
     "postcss-discard-comments": "^2.0.4",
     "postcss-font-awesome": "^0.2.1",
-    "postcss-import": "^8.0.2",
+    "postcss-import": "^8.1.0",
     "postcss-loader": "^0.8.2",
     "postcss-mixins": "^4.0.1"
   },
