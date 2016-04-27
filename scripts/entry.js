@@ -33,8 +33,7 @@ function getPostTmp() {
  */
 fs.open(path, 'r+', err => {
   if (err) {
-    const ws = fs.createOutputStream(path);
-    ws.write(getPostTmp());
+    fs.outputFile(path, getPostTmp());
   }
   childProcess.spawn('vim', [path], {stdio: 'inherit'});
 });
