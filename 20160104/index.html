@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html><head><meta charset="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><meta data-react-helmet="true" name="description"/><title data-react-helmet="true">Gatsby | Sofar</title><link rel="shortcut icon"/><link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><link href="/sofar/styles.css" rel="stylesheet"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="1591188602"><div class="Header" data-reactid="2"><h1 class="Header__title" data-reactid="3"><a class="Header__title__anchor" href="/sofar/" data-reactid="4">Sofar</a></h1></div><div data-reactid="5"><!-- react-empty: 6 --><div class="Post" data-reactid="7"><div class="PostHeader" data-reactid="8"><h1 class="PostHeader__title" data-reactid="9">Gatsby</h1><span class="PostHeader__createdAt" data-reactid="10"><!-- react-text: 11 -->Created <!-- /react-text --><!-- react-text: 12 -->2016-01-04 08:05:07 (月)<!-- /react-text --></span></div><div class="markdown" data-reactid="13"><p>カンムお土産の定番 <a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B007PNXIMM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B007PNXIMM&linkCode=as2&tag=ideyuta-22">大辛口 柿の種</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=ideyuta-22&l=as2&o=9&a=B007PNXIMM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> を社長が買ってきた。
+ <html><head><meta charset="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><meta data-react-helmet="true" name="description"/><title data-react-helmet="true">Gatsby | Sofar</title><link rel="shortcut icon"/><link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><link href="/sofar/styles.css" rel="stylesheet"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="-1129525233"><div class="Header" data-reactid="2"><h1 class="Header__title" data-reactid="3"><a class="Header__title__anchor" href="/sofar/" data-reactid="4">Sofar</a></h1></div><div data-reactid="5"><!-- react-empty: 6 --><div class="Post" data-reactid="7"><div class="PostHeader" data-reactid="8"><h1 class="PostHeader__title" data-reactid="9">Gatsby</h1><span class="PostHeader__createdAt" data-reactid="10"><!-- react-text: 11 -->Created <!-- /react-text --><!-- react-text: 12 -->2016-01-04 08:05:07 (月)<!-- /react-text --></span></div><div class="markdown" data-reactid="13"><p>カンムお土産の定番 <a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B007PNXIMM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B007PNXIMM&linkCode=as2&tag=ideyuta-22">大辛口 柿の種</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=ideyuta-22&l=as2&o=9&a=B007PNXIMM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> を社長が買ってきた。
 普通の柿の種よりも辛味が強くてクセになる。消費速度が尋常じゃない。</p>
 <hr>
 <h2>Gatsby</h2>
@@ -9,13 +9,13 @@
 config.toml
 html.jsx
 pages
-<span class="hljs-string">|___ _template.jsx</span>
-<span class="hljs-string">|___ index.jsx</span>
-\___ <span class="hljs-number">2016</span>
-     <span class="hljs-string">|___ hoge.md</span>
-     \___ fuga.md
+|<span class="hljs-variable">___</span> <span class="hljs-variable">_template</span>.jsx
+|<span class="hljs-variable">___</span> index.jsx
+\<span class="hljs-variable">___</span> <span class="hljs-number">2016</span>
+     |<span class="hljs-variable">___</span> hoge.md
+     \<span class="hljs-variable">___</span> fuga.md
 wrappers
-\___ md.jsx
+\<span class="hljs-variable">___</span> md.jsx
 </code></pre>
 <p>こんな感じの基底ファイル群を作って<code>gatsby build</code>すればMDファイルからHTMLをジェネレートしてくれる。JS/Reactで書けるので個人的には扱いやすくて🙆 ただ、隠蔽されてる処理が多いため、基底ファイル群の関係がわかりにくく若干気持ち悪い（<code>wrappers/md.jsx</code>がどこからもimportされてないけど各ページのtemplateになってるとか）。</p>
 <p>new postのようなコマンドがないので、ディレクトリとmdファイルを作成しなければならないのはちょっと手間（リサーチがあまいだけであるのかも？）。</p>

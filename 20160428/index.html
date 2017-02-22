@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html><head><meta charset="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><meta data-react-helmet="true" name="description"/><title data-react-helmet="true">ﾃｨｯﾌﾟｽ | Sofar</title><link rel="shortcut icon"/><link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><link href="/sofar/styles.css" rel="stylesheet"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="-790619885"><div class="Header" data-reactid="2"><h1 class="Header__title" data-reactid="3"><a class="Header__title__anchor" href="/sofar/" data-reactid="4">Sofar</a></h1></div><div data-reactid="5"><!-- react-empty: 6 --><div class="Post" data-reactid="7"><div class="PostHeader" data-reactid="8"><h1 class="PostHeader__title" data-reactid="9">ﾃｨｯﾌﾟｽ</h1><span class="PostHeader__createdAt" data-reactid="10"><!-- react-text: 11 -->Created <!-- /react-text --><!-- react-text: 12 -->2016-04-28 08:18:00 (木)<!-- /react-text --></span></div><div class="markdown" data-reactid="13"><h2>fs-extraからcreateOutputStreamが消えた</h2>
+ <html><head><meta charset="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><meta data-react-helmet="true" name="description"/><title data-react-helmet="true">ﾃｨｯﾌﾟｽ | Sofar</title><link rel="shortcut icon"/><link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><link href="/sofar/styles.css" rel="stylesheet"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="-1159760717"><div class="Header" data-reactid="2"><h1 class="Header__title" data-reactid="3"><a class="Header__title__anchor" href="/sofar/" data-reactid="4">Sofar</a></h1></div><div data-reactid="5"><!-- react-empty: 6 --><div class="Post" data-reactid="7"><div class="PostHeader" data-reactid="8"><h1 class="PostHeader__title" data-reactid="9">ﾃｨｯﾌﾟｽ</h1><span class="PostHeader__createdAt" data-reactid="10"><!-- react-text: 11 -->Created <!-- /react-text --><!-- react-text: 12 -->2016-04-28 08:18:00 (木)<!-- /react-text --></span></div><div class="markdown" data-reactid="13"><h2>fs-extraからcreateOutputStreamが消えた</h2>
 <ul>
 <li>なんか不可解なエラーがあって分離したっぽい？</li>
 <li><a href="https://github.com/jprichardson/create-output-stream">https://github.com/jprichardson/create-output-stream</a></li>
@@ -10,10 +10,10 @@
 <li><a href="https://github.com/facebook/react-native/issues/1706">https://github.com/facebook/react-native/issues/1706</a></li>
 </ul>
 <pre><code class="language-js">  <span class="hljs-keyword">this</span>.ds = <span class="hljs-keyword">new</span> ListView.DataSource({
-    getSectionData: getSectionData,
-    getRowData: getRowData,
-    rowHasChanged: (r1, r2) =&gt; r1 !== r2,
-    sectionHeaderHasChanged: (s1, s2) =&gt; s1 !== s2
+    <span class="hljs-attr">getSectionData</span>: getSectionData,
+    <span class="hljs-attr">getRowData</span>: getRowData,
+    <span class="hljs-attr">rowHasChanged</span>: <span class="hljs-function">(<span class="hljs-params">r1, r2</span>) =&gt;</span> r1 !== r2,
+    <span class="hljs-attr">sectionHeaderHasChanged</span>: <span class="hljs-function">(<span class="hljs-params">s1, s2</span>) =&gt;</span> s1 !== s2
   })
 </code></pre>
 <pre><code class="language-js">  <span class="hljs-keyword">var</span> dataBlob = {
