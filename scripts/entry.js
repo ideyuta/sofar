@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import childProcess from 'child_process';
-import fs from 'fs-extra';
-import moment from 'moment';
+const childProcess = require('child_process');
+const fs = require('fs-extra');
+const moment = require('moment');
 
 const today = new Date();
-const path = `pages/posts/${moment(today).format('YYYY-MM-DD')}.md`;
+const path = `src/pages/posts/${moment(today).format('YYYY-MM-DD')}.md`;
 
 /**
  * Set Weekdays Locale
