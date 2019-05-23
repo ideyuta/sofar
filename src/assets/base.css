@@ -1,0 +1,10 @@
+body {
+  background: #fff;
+  color: #202026;
+  font: 100%/1.45em Lato, Verdana, Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.gatsby-highlight {
+  font-size: 0.875rem;
+}
