@@ -47,11 +47,11 @@ p, ul, ol, li {
   line-height: 1.5em;
 }
 
-li {
+.post li {
   padding: 4px 0;
 }
 
-ul, ol {
+.post ul, .post ol {
   padding: 0 0 0 20px;
 }
 
