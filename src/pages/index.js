@@ -24,7 +24,7 @@ const List = styled.ul`
  */
 export default function Index(props) {
   const pages = props.data.allFile.edges
-    .map(edge => {
+    .map((edge) => {
       const { date, path, title } = edge.node.childMarkdownRemark.frontmatter;
       return (
         <li key={path}>
@@ -70,7 +70,6 @@ export const pageQuery = graphql`
               date
               layout
               path
-              description
             }
           }
         }

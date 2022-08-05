@@ -15,6 +15,7 @@ const Anchor = styled.a`
   width: 100%;
   &:hover {
     background: ${colors.gray50};
+    text-decoration: none;
   }
 `;
 const AnchorRight = styled(Anchor)`

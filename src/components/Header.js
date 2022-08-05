@@ -11,7 +11,7 @@ const Anchor = styled.a`
   padding: 20px;
   text-decoration: none;
   :hover {
-    color: ${colors.blue500};
+    color: #0066ff;
   }
 `;
 

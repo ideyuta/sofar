@@ -13,8 +13,8 @@ const SIZE = {
  * Spacer
  */
 export default styled.div`
-  height: ${props => SIZE[props.size]}px;
-  min-height: ${props => SIZE[props.size]}px;
-  min-width: ${props => SIZE[props.size]}px;
-  width: ${props => SIZE[props.size]}px;
+  height: ${(props) => SIZE[props.size]}px;
+  min-height: ${(props) => SIZE[props.size]}px;
+  min-width: ${(props) => SIZE[props.size]}px;
+  width: ${(props) => SIZE[props.size]}px;
 `;

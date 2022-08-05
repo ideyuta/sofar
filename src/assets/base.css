@@ -5,6 +5,10 @@ body {
   letter-spacing: 0.04em;
 }
 
+a {
+  text-underline-offset: 3px;
+}
+
 .gatsby-highlight {
   font-size: 0.875rem;
 }

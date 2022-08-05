@@ -25,7 +25,7 @@ const Title = styled.h2`
 export default function Template({ data }) {
   const { frontmatter, html } = data.post;
   const currentPost = data.posts.edges.find(
-    p => p.node.frontmatter.path === frontmatter.path
+    (p) => p.node.frontmatter.path === frontmatter.path
   );
   return (
     <div>
@@ -33,7 +33,7 @@ export default function Template({ data }) {
       <Header />
       <Content>
         <Title>{frontmatter.title}</Title>
-        <Date>{`Created: ${frontmatter.date}`}</Date>
+        <Date>{`Posted: ${frontmatter.date}`}</Date>
         <Spacer size="regular" />
         <div className="post" dangerouslySetInnerHTML={{ __html: html }} />
       </Content>
@@ -43,7 +43,7 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
