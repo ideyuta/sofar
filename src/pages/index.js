@@ -53,7 +53,7 @@ export const pageQuery = graphql`
   {
     allFile(
       filter: { relativeDirectory: { eq: "posts" } }
-      sort: { fields: [base], order: ASC }
+      sort: { base:ASC }
     ) {
       edges {
         next {

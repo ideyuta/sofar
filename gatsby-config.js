@@ -4,6 +4,7 @@ module.exports = {
     title: 'Sofar',
   },
   plugins: [
+    'babel-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
@@ -16,6 +17,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'images',
         path: `${__dirname}/src/images/`,
       },
     },
