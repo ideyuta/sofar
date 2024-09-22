@@ -55,6 +55,19 @@ p, ul, ol, li {
   padding: 0 0 0 20px;
 }
 
+.two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  p {
+    margin: 0;
+  }
+  @media only screen and (max-width: 520px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 pre {
   background: #000;
   border: 0 !important;
